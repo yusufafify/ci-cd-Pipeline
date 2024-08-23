@@ -113,16 +113,6 @@ export default defineConfig({
 - Continuous Integration: Automatically builds and tests the project, catching issues early in the development process.
 - Continuous Deployment: Deploys the latest changes to GitHub Pages automatically, allowing for rapid feedback and iteration.
 
-### Missing Elements and Future Enhancements
-#### Automated Testing
-While the current pipeline focuses on building and deploying the project, integrating automated testing is a recommended next step to ensure code quality. You can add a testing step in the pipeline:
-```
-- name: Run Tests
-  run: npm test
-```
-
-### Infrastructure as Code (IaC)
-While this project is focused on deploying a static site, implementing Infrastructure as Code using tools like Terraform or Ansible could be beneficial for more complex projects. This would ensure that the environment is consistently configured across different deployments.
 
 ### Conclusion
 This CI/CD pipeline setup ensures that the React Vite project is built, tested, and deployed automatically with every push to the `master` branch. By leveraging GitHub Actions and GitHub Pages, the deployment process is streamlined, allowing for rapid and reliable delivery of updates.
